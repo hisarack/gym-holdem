@@ -25,7 +25,7 @@ with open("README.md") as readme:
   long_description = readme.read()
 
 setup(
-  name='gym-holdem',
+  name='gymholdem',
   version='0.0.1',
   long_description=long_description,
   url='https://github.com/hisarack/gym-holdem',
@@ -34,6 +34,6 @@ setup(
   license='MIT',
   description=('OpenAI Gym No-Limit Texas Holdem Environment.'),
   packages=find_packages(exclude=['test', 'examples']),
-  install_requires=['treys', 'gym'],
+  install_requires=['gym'],
   platforms='any',
 )

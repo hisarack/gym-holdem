@@ -77,7 +77,7 @@ The observation returned is a `tuple` of the following by index:
 
 ```python
 import gym
-import holdem
+import gymholdem
 
 def play_out_hand(env, n_seats):
   # reset environment, gather relevant observations

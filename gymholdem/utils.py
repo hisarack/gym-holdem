@@ -19,7 +19,7 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
-from treys import Card
+from .treys.card import Card
 
 
 class action_table:
@@ -69,19 +69,19 @@ def card_to_str(card):
 
 
 def hand_to_str(hand):
-  output = " "
+  output = u" "
   for i in range(len(hand)):
     c = hand[i]
     if c == -1:
       if i != len(hand) - 1:
-        output += '[  ],'
+        output += u'[  ],'
       else:
-        output += '[  ] '
+        output += u'[  ] '
       continue
     if i != len(hand) - 1:
-      output += str(Card.int_to_pretty_str(c)) + ','
+      output += u'{}{}'.format(str(c), u',')
     else:
-      output += str(Card.int_to_pretty_str(c)) + ' '
+      output += u'{}{}'.format(str(c), u' ')
   return output
 
 

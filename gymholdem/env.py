@@ -23,7 +23,9 @@
 from gym import Env, error, spaces, utils
 from gym.utils import seeding
 
-from treys import Card, Deck, Evaluator
+from .treys.card import Card
+from .treys.deck import Deck
+from .treys.evaluator import Evaluator
 
 from .player import Player
 from .utils import hand_to_str, format_action
