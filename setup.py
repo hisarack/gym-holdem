@@ -25,10 +25,10 @@ with open("README.md") as readme:
   long_description = readme.read()
 
 setup(
-  name='holdem',
-  version='1.0.0',
+  name='gym-holdem',
+  version='0.0.1',
   long_description=long_description,
-  url='https://github.com/wenkesj/holdem',
+  url='https://github.com/hisarack/gym-holdem',
   author='Sam Wenke',
   author_email='samwenke@gmail.com',
   license='MIT',
